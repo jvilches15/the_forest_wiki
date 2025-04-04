@@ -1,0 +1,785 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="imagenes/Icono/the-forest.icon.png" />
+  <title>Lugares-The forest Wiki</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/css/lugares.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="fondo1">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        
+    <a class="navbar-brand" href="menuprincipal_wiki.html" id="fuente">The Forest Wiki</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="menuprincipal_wiki.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="forowiki.html">Foro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.google.com/maps/place/R%C3%ADo+Imperial+460,+Valle+Grande,+Lampa,+Regi%C3%B3n+Metropolitana/@-33.3295809,-70.751195,17z/data=!3m1!4b1!4m5!3m4!1s0x9662bf62531dc747:0xc0b4aee73c3b9373!8m2!3d-33.3295854!4d-70.7490063?hl=es-CL">Dirección</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="registrase_wiki.html">Registrarse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="inicio_sesion_wiki.html">Iniciar sesion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="micuentatf.html">Mi Cuenta</a>
+          </li>
+      </ul>
+      <form class="d-flex" id="separarsearch">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  
+</nav>
+
+
+
+  <!-- Pueblos-->
+
+  <center>
+    <h1 id=titulo1 >Pueblos</h1>
+  </center>
+
+  
+
+  <section class="color2 letra">
+    <section class="cajacard">
+      <div class="w-33">
+        <div class="center">
+          <button class="btn btn-dark">
+            Editar
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="{% static 'img/img_lugares_wiki/pueblotf_1.jpg' %}" class="card-img-top" alt="Pueblo The Forest">
+              <div class="card-body">
+                <h5 class="card-title">Pueblo</h5>
+                <p class="card-text">Construidos por mutantes, son cabañas pequeñas con techo de paja y es una base para
+                  los mutantes,
+                  frecuentemente es ocupado de 2 a 7 mutantes en el día y la noche. se pueden encontrar 2 tipos de
+                  cabañas triangulares y estilo de casa larga. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="{% static 'img/img_lugares_wiki/pueblocentraltf.jpg' %}" class="card-img-top" alt="Pueblo Central">
+              <div class="card-body">
+                <h5 class="card-title">Pueblo Central</h5>
+                <p class="card-text">Ubicado en el centro del mapa con ligera desviación al sur, una de las aldeas mas
+                  peligrosas del juego dado a la alta cantidad
+                  de <a href="#" class="link-warning">Rutas de patrulla</a> en el sector, objetos que se pueden
+                  encontrar: Bidon de gasolina x2, cuerda x2, laptop, efigies de canibales, <a href="#"
+                    class="link-warning">Flora:</a> achicoria, mora, arandano, hongos,
+                  <a href="#" class="link-warning">Fauna:</a> conejos y lagartos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="{% static 'img/img_lugares_wiki/pueblodecabañasplaya_1.jpg' %}" class="card-img-top" alt="Pueblo de Cabañas Playa">
+              <div class="card-body">
+                <h5 class="card-title">Pueblo Cabañas De Playa</h5>
+                <p class="card-text">Contruidos por canibales, es una serie de cabañas repartidas a lo largo de toda la
+                  playa que es patruyado por <a href="#" class="link-warning">Enemigos</a> y
+                  con alta precensia de <a href="#" class="link-warning">Tiburones Muertos</a>, latas de combustible,
+                  maletas, calaveras , laptop, refrescos, bocadillos, laca, bebida alcohólica.
+                  <a href="#" class="link-warning">Flora</a>:twinberry, <a href="#" class="link-warning">Fauna</a>: 5-6
+                  <a href="#" class="link-warning">Tiburones Muertos</a> y <a href="#" class="link-warning">Gaviotas</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="{% static 'img/img_lugares_wiki/pueblojuntoallago_1.jpg' %}" class="card-img-top" alt="Pueblo junto al lago">
+              <div class="card-body">
+                <h5 class="card-title">Pueblo Junto al Lago</h5>
+                <p class="card-text">Ubicado al lado del gran lago, en el se puede encontrar cuerda x2, atuendo, pernos
+                  de ballesta, maletas, olp-pot, hoguera canibal, jaulas de madera, efigies canibales.
+                  <a href="#" class="link-warning">Flora</a>: baya de nieve, hierbas, montones de nieves, árboles de
+                  palo, surtidos de plantas a base de hojas. <a href="#" class="link-warning">Fauna</a>: Peces,
+                  en el lago: lagartos, conejos, gansos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/pueblodelacascada_1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pueblo de la cascada</h5>
+                <p class="card-text">La aldea de la cascada es una aldea mutante que los mutantes suelen utilizar como
+                  intercambio para sus patrullas. Es uno de los pueblos más valiosos para asaltar, ya que tiene muchos
+                  elementos diferentes y alcanza la flora y la fauna
+                  <a href="#" class="link-warning">Flora</a> Aloe vera, Hongos. <a href="#"
+                    class="link-warning">Fauna</a> Conejos Lagartos Jabalíes Ciervos Ardilla.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/pueblodecocodrilos_1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Aldea de cabañas de cocdrilos</h5>
+                <p class="card-text">Este pueblo está ubicado entre el río y la zona de nieve. . Es posible que los
+                  caníbales lo hayan abandonado debido a la gran cantidad de cocodrilos , aunque esto es especulación.
+                  Las rutas de patrulla pasan por aquí con bastante frecuencia. Hay varios puestos de vigilancia en el
+                  pueblo y en el río al lado.
+                  Puedes encontrar: pintura roja, lanza mejorada, cuerda, maletas. <a href="#"
+                    class="link-warning">Flora</a>: Arándano Blackberry Twinberry Snowberry, <a href="#"
+                    class="link-warning">Fauna</a>: Cocodrilos Lagartos Conejos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/puebloribereño_1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pueblo Ribereño</h5>
+                <p class="card-text">Es pequeño y carece de ebjetos, Hay algunas tiendas de campaña de lona al otro lado
+                  del río y una Cueva 3 - Entradas a la Cueva Húmeda en las cercanías.
+                  Puedes encontrar elementos: atuendo, <a href="#" class="link-warning">Flora</a>: Hierbas, Arándano,
+                  Twinberry, Snowberry, <a href="#" class="link-warning">Fauna</a>: Lagartos Conejos Ciervos Peces - En
+                  el estanque de al lado,
+                  objetos: Efigies caníbales2x, cabañas de hierba.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/pueblocostero_1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pueblo Costero</h5>
+                <p class="card-text"> Se ubica junto al mar contiene dos cabañas y suele estar patrullada por caníbales,
+                  No tiene muchos artículos de valor.
+                  Elementos: 2x Cuerda - Ambas colgadas en una de las cabañas, <a href="#"
+                    class="link-warning">Flora</a>: Twinberry, Árboles, árboles de palo, <a href="#"
+                    class="link-warning">Fauna</a>:
+                  Conejos Lagartos, objetos: Efigies caníbales
+                  3 cabañas caníbales
+                  Fuego inservible en el centro.
+                  cadáveres quemados
+                  carpas naranjas.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/puebloprincipal_1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pueblo Principal</h5>
+                <p class="card-text">Es aldea más grande que han construido los caníbales, A menudo está patrullado por
+                  caníbales y es un lugar peligroso para construir o holgazanear, uno de los mejores pueblos para
+                  asaltar.
+                  Puedes encontrar elementos: maletas de refrescos , tela de cuerda , lata de combustible , cajas de
+                  placa de circuito, bengalas , pelotas de tenis de dinamita , Timmy Drawing 10 , pintura roja.
+                  <a href="#" class="link-warning">Flora</a>: Hierbas
+                  HongosHongos
+                  Árboles
+                  Arbustos y árboles jóvenes. <a href="#" class="link-warning">Fauna</a>: Conejos Lagartos Ciervos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ubicaciones especificas-->
+      <br>
+      <br>
+      <br>
+      <br>
+      <center>
+        <h1 id=titulo1>Ubicaciones especificas</h1>
+      </center>
+      <br>
+      <br>
+
+
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/tumbadelaplaya_1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Tumba junto a la playa</h5>
+                <p class="card-text">se puede encontrar en la playa en la bahía de yates.
+                  Cassette 5 y varias fotos de yates se pueden encontrar encima. La imagen apoyada en la cruz se puede
+                  agregar a las notas .
+                  Se pueden encontrar varias maletas en las inmediaciones de la tumba. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/cabina_1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cabina</h5>
+                <p class="card-text">Es el frente faltante del avión estrellado en el que reapareces, Ubicado cerca de
+                  la cabina, el copiloto estaba sentado en una silla y hay una pistola de bengalas detrás de él en un
+                  asiento
+                  <a href="#" class="link-warning">Fauna</a>:Ciervo
+                  Conejos blancos
+                  Jabalí.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/lagodelosgansos_1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Lago de los Gansos</h5>
+                <p class="card-text">Es un lugar dentro del bosque donde se pueden encontrar una multitud de gansos, El
+                  lago se asoma a un acantilado y es un lugar base popular debido a su naturaleza memorable, la
+                  protección natural del acantilado y la abundancia de comida cercana (gansos).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/helicoptero_1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Helicóptero</h5>
+                <p class="card-text">Se encuentra en el fondo del sumidero . Es un avión pequeño, pero parece haber
+                  dejado algunos rasguños y marcas de quemaduras en el fondo del foso cuando se estrelló. Una de las
+                  ventanas delanteras ha sido rota,
+                  Elementos: Maleta y machete.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/contenedores de envio_1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Contenedores de envío</h5>
+                <p class="card-text">Solía ​​encontrarse en la playa junto con otros dos contenedores, varios paquetes y
+                  algunos artículos dispersos . Había una cinta de casete, que se puede reproducir con el reproductor de
+                  casetes , pegada en la cuenca del ojo de la decoración de calavera de animal en la pared.
+                  Elementos: 1x Cinta eléctrica
+                  Montones de cajas de placas de circuitos
+                  Más de 20x Bebidas alcohólicas esparcidas en la playa y en el agua
+                  Montones de piedras arrojadizas Medicamentos (píldoras) esparcidos sobre la playa Monedas esparcidas
+                  sobre la playa Manifiesto de carga en uno de los contenedores
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/cuartodealijo_1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cuarto de alijo oculto</h5>
+                <p class="card-text">Es una sala secreta que contiene montones de elementos y algunos elementos de la
+                  historia, Hay múltiples entradas para acceder a la habitación. El más cercano está cerca de Lakeside
+                  Village , hay un camino que conduce desde el pueblo hasta la entrada de la cueva , se aleja del lago
+                  en la dirección opuesta. A menudo hay caníbales y mutantes que merodean por la entrada.
+                  Elementos: Hacha moderna Informe de autopsia Cinta eléctrica Flecha moderna Dinamita Refrescos
+                  Medicamentos (pastillas) Tablero de circuitos Niños perdidos de la península Caja de tablero de
+                  circuitos Caja de explosivos Pintura roja Traje de pincel.
+                  <a href="#" class="link-warning">Fauna</a>: Pez, tortuga , tiburon. <a href="#"
+                    class="link-warning">Flora</a>: Algunas plantas a base de mar en el océano.
+                  no hay palos. Objetos: Contenedores de envío
+                  3x Tiburones muertos en el agua
+                  Algunas efigies caníbales.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/labsahara_1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Laboratorio Sahára</h5>
+                <p class="card-text">Propiedad de Sahara Therapeutics es un área subterránea profunda en la península .
+                  Para acceder al laboratorio , el jugador debe atravesar la puerta de la bóveda , ubicada al final de
+                  la cueva HC en el fondo del sumidero
+                  El laboratorio contiene:7 bebés mutantes x1 ejército x3 caníbales flacos x1 End Boss , la víctima del
+                  obelisco / Megan.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/obelisco_1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Obelisco</h5>
+                <p class="card-text">Se dividen en 3 obeliscos Obelisco de Res, es una parte principal de la historia .
+                  Es un artefacto sobrenatural que se encuentra en el Laboratorio de Investigación , en las
+                  profundidades del subsuelo, que se puede utilizar para resucitar a los muertos. Para hacerlo, se
+                  requiere un sacrificio vivo,
+                  El Power Obelisk también es una parte principal de la historia . Es un artefacto sobrenatural que se
+                  encuentra en la sección del observatorio del Laboratorio de Investigación , en lo alto de las montañas
+                  , que se puede usar para derribar aviones. Parece ser una especie de dispositivo EMP, debido a la
+                  naturaleza de lo que hace.
+                  Obelisco de la muerte :Este obelisco solo se insinúa y el jugador no puede encontrarlo y, como tal,
+                  sigue siendo en su mayoría teórico. Es un obelisco que, opuesto al obelisco de la resurrección, mata
+                  humanos dentro de su radio.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/puertadeboveda_1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Puerta de la Bóveda</h5>
+                <p class="card-text">Al abrir la puerta de la bóveda , la historia avanza y proporciona acceso al
+                  Laboratorio Sahara . Se encuentra al final de la Cueva HC (Cueva del Infierno).
+                  La tarjeta de seguridad del empleado que se encuentra en la Cueva 6 - Cueva del abogado es necesaria
+                  para abrir la puerta de la bóveda.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/sumidero_1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sumidero</h5>
+                <p class="card-text">Hay varias formas de llegar al fondo del sumidero . Para llegar al fondo puedes:
+                  Pasa por la Cueva 7 , que abrirá un par de puertas de sacrificio en el fondo del sumidero, lo que
+                  permitirá al jugador entrar directamente.
+                  Salta desde el acantilado más alto directamente al estanque en el centro del sumidero; puede tomar
+                  muchos intentos para conseguirlo.
+                  El jugador necesitará, entre otras cosas, la tarjeta de acceso , el hacha de escalada y el rebreather
+                  para explorar completamente el sumidero.
+                  Una vez en la cima de las rocas, los caníbales de abajo son una presa fácil. Simplemente use la
+                  pistola de bengalas, las flechas incendiarias o molotovs . Tenga en cuenta que si el jugador permanece
+                  en el punto bajo de las rocas, los caníbales y mutantes pueden cargar o saltar.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/lagodenieve_1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Lago de nieve</h5>
+                <p class="card-text"> Es un lago grande y es un lugar popular para que los jugadores construyan una vez
+                  que hayan adquirido un traje de abrigo,
+                  Está muy cerca de las zonas de césped. Hay un caché cerca con Gun Part 7 en él. Un poco más abajo del
+                  arroyo del Snow Lake hay un Waterfall Village,
+                  puedes encontrar: elementos: Gun Part 7 en el caché cercano, <a href="#"
+                    class="link-warning">Flora</a>: árboles de palo, Árboles, Hongos,
+                  <a href="#" class="link-warning">Fauna</a>: Ciervo, Conejos blancos, objetos: Caché con una parte de
+                  pistola
+                  Antes de la versión 1.0 , existía la tumba del área montañosa con un casete 5.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/elavion_1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">El Avión</h5>
+                <p class="card-text">Juega un papel importante en la historia , ya que es la razón por la que el jugador
+                  está en la Península en primer lugar,
+                  elementos que puedes encontrar: 3 bebidas alcohólicas, 4 bandejas de comida, 2 medicamentos, 4
+                  refrescos Hacha de avión Manifiesto de pasajeros.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/campamentoestanque_1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Campamento estanque</h5>
+                <p class="card-text">Es un pequeño lugar para acampar que consta de 2 tiendas azules que se pueden usar
+                  para dormir y guardar el juego,
+                  Se puede encontrar yendo en línea recta después de salir del sistema de cuevas , pasando por algunos
+                  pasajeros y ser visto por un pequeño estanque de pesca.
+                  Puedes encontrar: olla vieja, <a href="#" class="link-warning">Flora</a>: Hierbas, Arbustos, árboles
+                  de palo, Árboles, <a href="#" class="link-warning">Flora</a>: Conejo Ardilla Ciervo Pez en estanque de
+                  pesca,
+                  objetos: Efigies caníbales
+                  carpas azules
+                  Bolsas de dormir.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/campamentodefilmacion_1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Campamento del equipo de filmación</h5>
+                <p class="card-text">Es un lugar saturado de carpas. Tiene enlaces a la historia . Hay cadáveres,
+                  cámaras y otros objetos que lo sugieren,
+                  Puedes encontrar: elemento: 8x Caja Amarilla
+                  60x Flechas Modernas en las cajas amarillas
+                  6x Bengalas en las cajas amarillas
+                  1x Olla Vieja
+                  1x Cinta Aislante en medio del campamento Dinero en efectivo , dentro de las tiendas y en el suelo.
+                  <a href="#" class="link-warning">Flora</a>: Hongo Amanita
+                  Montones de árboles, arbustos y palos, <a href="#" class="link-warning">Fauna</a>: Ciervo : hay
+                  montones de ciervos alrededor de este campamento, uno de los mejores lugares para ellos Conejo
+                  Ardilla,
+                  Objetos: Libro - Charles: The Survival Man - No se puede coleccionar, parte de la historia
+                  probablemente Maletas
+
+                  Montones de tiendas de campaña, una de ellas proporciona un punto para dormir y guardar
+                  Cámaras
+                  Quemadores de campamento y otros accesorios relacionados con el campamento
+                  Basura variada.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/tripulacioncongelada_1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Campamento de tripulación congelado</h5>
+                <p class="card-text">Es un lugar para acampar con 3 cuerpos congelados ubicados en el extremo norte de
+                  las montañas, en el borde del mapa,
+                  Puedes encontrar: elementos: Meds Snack Soda Coins 2 Maletas Flare, no hay flora ni fauna.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/puentetierra_1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Puente de tierra</h5>
+                <p class="card-text">Es un trozo de tierra que separa el río del mar . Es bastante grueso y tiene una
+                  elevación pronunciada que no se puede escalar. Es uno de los lugares más peligrosos para construir en
+                  el juego.
+                  Construir sobre el puente terrestre es un lugar de construcción viable, ya que tiene una vista
+                  panorámica, está cerca de tortugas , cocodrilos , lagartijas y conejos. Puedes encontrar:
+                  <a href="#" class="link-warning">Fauna</a>: tortuga cocodrilo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/campamentodeplaya_1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Campamento de playa </h5>
+                <p class="card-text">Es una tienda de campaña en la playa, es un lugar común para guardar y un lugar
+                  fácil para encontrar una olla vieja. es un lugar común para que los jugadores guarden su juego y
+                  recolecten el bote que reaparece allí.
+                  Puedes encontrar: elementos: 1x Old Pot
+                  Some Booze , más bajo el agua cerca del ancla.
+                  1x Laptop
+                  1x Electrical Tape Magazine - Let's Camp - No se puede recolectar Magazine - Save the Forest - No se
+                  puede recolectar.
+                  <a href="#" class="link-warning">Flora</a>: Arándano, Snowberry en las inmediaciones
+                  Arbustos
+                  árboles de palo
+                  Árboles
+                  <a href="#" class="link-warning">Fauna</a>: Gaviota, 3x tiburones muertos. objetos: envoltorios de
+                  alimentos
+                  Bolsa de dormir
+                  fuego de campo muerto
+                  boya de vida
+                  Carpa.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/Tierrasfertiles_1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Tierras fértiles</h5>
+                <p class="card-text">Son una extensión de tierra relativamente plana y abierta con una alta densidad de
+                  arbustos de bayas , vida animal , hierbas y otros recursos como palos, rocas y agua.
+                  Como sugiere el nombre, el área presenta exuberantes bosques y praderas. Hay una alta densidad de
+                  plantas útiles y animales de caza , lo que permite al jugador forrajear, cazar y pescar con éxito con
+                  facilidad.
+                  Si el jugador desea construir aquí, puede ser ventajoso construir hacia el río que está cerca de la
+                  gran cantidad de árboles de palo y árboles.
+                  Puedes encontrar: <a href="#" class="link-warning">Flora</a>: Equinácea, Achicoria, Aloe Vera,
+                  Caléndula, Arándano, Mora, Twinberry, Snowberry,
+                  <a href="#" class="link-warning">Fauna</a>: Venado, Conejo, Lagarto, Ardilla, Pez en el estanque
+                  dentro de Riverside Village Raccoon (generalmente aparece en la meseta en el lado este del mapa, entre
+                  el lago grande y la costa).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+      </div>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/lugarparaacampar_1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Lugar para acampar</h5>
+                <p class="card-text">Está discretamente ubicado en la parte sur del bosque, fácil de pasar por alto
+                  debido a su apariencia poco distinguida, No es un lugar común para visitar porque no tiene muchos
+                  artículos valiosos para el jugador, aunque la diversidad de flora y fauna puede ser prominente.
+                  Puedes encontrar: elementos: 1x Monedas, olla viejas, <a href="#" class="link-warning">Flora</a>:
+                  Hierbas
+                  Twinberry cerca
+                  Arbustos
+                  árboles de palo
+                  Árboles
+                  <a href="#" class="link-warning">Flora</a>: Pez lagarto conejo en un pequeño estanque de pesca
+                  cercano, objetos: Bolsas de dormir
+                  fuego de campo muerto.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/yate_1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Yate</h5>
+                <p class="card-text">Es una embarcación abandonada que se encuentra en una bahía de la costa suroeste de
+                  la Península. Patrullas de caníbales frecuentan el área a menudo, especialmente si se trata de un
+                  lugar de accidente.
+                  Puedes encontrar: elementos: paños
+                  3 refrigerios
+                  1 refresco
+                  1 bebida alcohólica
+                  png 2 botes de aire
+                  1 calavera
+                  3 cuerdas Reproductor de casete Cinta de casete 1 foto - Virginia Milk Carton Magazine - Yate Foto de
+                  oso de peluche Dibujo de unicornio de Megan Clave de artefacto (detrás de la puerta cerrada, se accede
+                  con la tarjeta clave dos ).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Ubicaciones Variadas-->
+      <br>
+      <br>
+      <br>
+      <br>
+      <center>
+        <h1 id=titulo1>Ubicaciones Variadas</h1>
+      </center>
+      <br>
+      <br>
+
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/islastf.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Islas</h5>
+                <p class="card-text">Estas áreas del juego que están en el mar y no están conectadas por ningún tipo de
+                  puente terrestre, son los lugares más seguros para construir en el juego, ya que los mutantes y los
+                  mutantes espeluznantes no pueden nadar ni cruzar el agua
+                  No hay flora ni fauna.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/riotf.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">río</h5>
+                <p class="card-text">Es el principal cuerpo de agua que discurre por el centro de la península Los peces
+                  abundan en el río. Es muy grande con múltiples ramas y requiere en la mayoría de los lugares que el
+                  jugador nade para cruzarlo. Sin embargo, en varios puntos existen zonas de paso poco profundas,
+                  normalmente marcadas por la presencia de varias rocas. Estas áreas de cruce son utilizadas
+                  frecuentemente por los caníbales.
+                  Muchos animales abrazan las orillas, incluidos cocodrilos , tortugas , conejos y lagartos .</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/areademontaña_1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Area de montaña</h5>
+                <p class="card-text">Es la parte norte de la península que está cubierta de nieven no son escalables
+                  pero Un ascensor en el laboratorio Sahara llevará al jugador al observatorio en la cima de las
+                  montañas.
+                  <a href="#" class="link-warning">Fauna:</a>Ciervos , ardillas , pájaros y los únicos conejos de las
+                  nieves se pueden encontrar en la zona. Los caníbales parecen resistentes al frío y patrullan la zona,
+                  aunque su presencia general es menor que en el sur de la península .También se puede encontrar
+                  jabalí , pero solo alrededor de los bordes exteriores. <a href="#" class="link-warning">Flora:</a> No
+                  hay bayas ni plantas medicinales en la zona, pero sí setas , que son fáciles de ver en la nieve.
+                  Sin embargo, la mayoría de ellos solo se pueden encontrar al sur del lago y en la parte occidental de
+                  la zona montañosa.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/puestodevigilancia_1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Puesto de vigilancia</h5>
+                <p class="card-text">son estructuras que parecen haber sido creadas por los caníbales , aunque nunca se
+                  les ve usando los puestos. Son largos y altos, aparentemente hechos de la misma madera flotante que
+                  los campamentos caníbales ubicados cerca del agua.
+                  Elementos: Antes del lanzamiento completo, había una cantidad de diferentes tipos de elementos que el
+                  jugador podía encontrar en la parte superior de estas torres, pero solo aparece 1 elemento allí:
+                  Ballesta.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/arbolessagrados_1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Árboles sagrados</h5>
+                <p class="card-text">Son árboles caducifolios gigantes, pálidos, parecidos a los robles, esparcidos por
+                  la parte sur de la península . Estos árboles no se pueden talar ni volar.
+                  los caníbales pueden saltar lo suficientemente alto como para alcanzar al jugador allí, no es un lugar
+                  completamente seguro.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/campamentoabandonado_1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Campamento abandonado</h5>
+                <p class="card-text">Hay varios campings abandonados repartidos por la península y en las cuevas, En los
+                  campamentos abandonados, el jugador puede encontrar varios artículos como pastillas ,
+                  bebidas alcohólicas , dinero en efectivo , monedas , bengalas , flechas modernas , ollas viejas ,
+                  maletas y artículos de la historia. Algunos campamentos tienen un fuego básico que el jugador puede
+                  usar. En la mayoría de los campamentos el jugador puede dormir y ahorrar en una de las Tiendas. Las
+                  bengalas y las flechas modernas se pueden encontrar en cajas amarillas . El jugador también encontrará
+                  algunos pasajeros aquí.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/playastf.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Playas</h5>
+                <p class="card-text">Son lugares de arena en la mayoría de los bordes de la península . Las tortugas y
+                  las gaviotas son las principales fuentes de alimento para desovar, aunque los peces también pueden
+                  desovar en el agua.
+                  se pueden encontrar esparcidos por varias playas, a veces con tiendas de campaña de campamentos
+                  abandonados cercanos. las playas con puestos de vigilancia suelen tener una alta presencia de
+                  caníbales ., lo que los convertiría en un campo de batalla si el jugador decidiera acampar allí.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
+              <img src="img_lugares_wiki/estanquedepesca_1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Estanque de pesca</h5>
+                <p class="card-text">son lugares de agua repartidos por toda la península . A veces se encuentran junto
+                  a pueblos caníbales , y también a veces tienen equipaje esparcido aparentemente desde el avión .
+                  Cuando están cerca de las aldeas, a menudo tienen altas torres de exploración en el agua o cerca.
+                  Estos estanques de agua a veces tienen lanzas plantadas en ellos o cerca de ellos, que se pueden usar
+                  para atrapar peces que nadan alrededor.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </section>
+  </section>
+
+  <!-- Footer -->
+  <footer id="piedepag">
+    <p>Chile, Santiago de Chile | Fono: 227369936 | Email: tfwiki@gmail.com</p>
+    <p>Copyright 2022 Wiki <span style="color: #ffc400;">THE FOREST WIKI</span></p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

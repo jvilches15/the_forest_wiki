@@ -1,0 +1,255 @@
+#titulo {
+    color: #ffc400;
+    border: 3px dimgray solid;
+    border-radius: 100px;
+    background-color: black ;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+	margin-bottom: 20px;
+    font-family: Georgia;
+    text-align: center;
+}
+
+#fondo{
+   background-color: black;  
+   background-image: url(imagenes/Fondos/Fondo3.jpg); 
+   background-position: top;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+#caja_bienvenida{
+   background-color: black;
+   margin: auto;
+   margin-top: 20px;
+   border: 3px dimgray solid;
+   border-radius: 5px;   
+   text-align: center; 
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-left: 20px;
+   padding-right: 20px;
+   opacity: 0.85;
+   
+}
+
+.fondo-tabla{
+   background-color: black;
+   opacity: 8px;
+}
+
+
+.margin-tabla{
+   margin-top: 20px;
+}
+
+.tamannio-letra{
+   width: 100px;
+   height: 100px;
+}
+
+#bordertabla{
+   border-radius: 5px;
+}
+
+#casillad{
+   width: 400px;
+}
+
+.colorl{
+   color: #ffc400;
+   font-family: georgia;
+}
+
+.separar-arriba{
+	padding-top: 25px;
+}
+
+
+.center{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.center-titulo{
+   text-align: center;
+   align-items: center;
+}
+
+.imagen{
+   
+   width: 110px;
+   height: 110px;
+}
+
+.letra{
+   font-family: cursive;
+}
+
+#separar-arriba{
+	padding-top: 10px;
+}
+
+.B{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+/* ---- ----- ----- Pie de pagina ----- ----- ----- */
+
+footer {
+	background-color: rgba(36, 36, 36, 0.664);
+	color: white;
+	padding-top: 1.2rem;
+	padding-bottom: 1.2rem;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+/*footer{
+	background: #1414148c;
+	height: auto;
+	width: 100vw;
+	margin-top: 20px;
+	font-family:"Open Sans";
+	padding-top: auto;
+	color: #ffc400;
+    text-align: center;
+    position: absolute;
+}
+.footer-contenido{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction:column;
+}
+.footer-contenido h3{
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-transform: capitalize;
+}
+
+.footer-contenido p{
+	max-width: 500px;
+	margin: 10px auto;
+	line-height: 28px;
+	font-size: 14px;
+}
+
+.footer-boton{
+	background: #1414148c;
+	width: 96.8vw;
+	padding: 20px 0;
+	text-align: center;
+}
+.footer-boton p{
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;	
+}
+.footer-boton span{
+	text-transform: uppercase;
+	opacity: .4;
+	font-weight: 200;
+}
+
+.social{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0 3rem 0;	
+}
+.social li{
+	margin: 0 10px;
+}
+.social a{
+	text-decoration: none;
+	color: #fff;
+}
+.social a i{
+	font-size: 1.1rem;
+	transition: color .4s ease;
+}
+.social a:hover i{
+	color: aqua;
+}
+
+/* ---- ----- ----- Header ----- ----- ----- */
+
+:root {
+	--rojo: #ffc400;
+	--fondo: #1414148c;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+header {
+	font-family: 'Bebas Neue', cursive;
+	color: var(--rojo);
+	font-size: 22px;
+	
+}
+#fuente{
+	color: var(--rojo);
+	font-family: 'Bebas Neue', cursive;
+	font-size: 30px;
+   padding-left: 20px;
+}
+#piedepag{
+	font-family: 'Bebas Neue', cursive;
+	color: var(--rojo);
+	font-size: 20px;
+	margin-top: 20px;
+}
+nav{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 22px;
+	color: var(--rojo);
+}
+#titulo1 {
+    color: #ffc400 ;
+    border: 5px dimgray solid;
+    border-radius: 100px;
+    background-color: black ;
+    margin-left: 20%;
+    margin-right: 20%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+    font-family: monospace;
+   }
+
+.color2{
+    color: #ffc400 ;
+    font-family: georgia;
+}
+
+#col{
+	background-color: black;
+}
+.cajacard{
+	opacity: 0.85;
+
+}
+#separar-derecha{
+	margin-right: 20px;
+}
+
+#separar-izquiera{
+	margin-left: 20px;
+}
+

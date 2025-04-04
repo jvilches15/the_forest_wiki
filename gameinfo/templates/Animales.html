@@ -1,0 +1,331 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'img/imagenes/Icono/the-forest.icon.png' %}" />
+    <title>Animales-The forest Wiki</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/Animales.css' %}">
+</head>
+
+<body id="fondo">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        
+        <a class="navbar-brand" href="{% url 'menu' %}" id="fuente">The Forest Wiki</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'menu' %}">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'forowiki' %}">Foro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.google.com/maps/place/R%C3%ADo+Imperial+460,+Valle+Grande,+Lampa,+Regi%C3%B3n+Metropolitana/@-33.3295809,-70.751195,17z/data=!3m1!4b1!4m5!3m4!1s0x9662bf62531dc747:0xc0b4aee73c3b9373!8m2!3d-33.3295854!4d-70.7490063?hl=es-CL">Dirección</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'registrarse' %}">Registrarse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'login' %}">Iniciar Sesión</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'micuentatf' %}">Mi Cuenta</a>
+                </li>
+          </ul>
+          <form class="d-flex" id="separar-derecha">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      
+    </nav>
+
+    <section class="colorl">
+        <div class="letra">
+            <div class="container">
+                <div class="center-titulo">
+                    <h1 id=titulo>Animales</h1>
+                </div>
+                <div class="container">
+                    <div class="w-33">
+                        <div class="center">
+                          <button class="btn btn-dark">
+                            Editar
+                          </button>
+                        </div>
+                    </div>
+                <div class="center">
+                    <p id="caja_bienvenida">La península de The Forest está poblada de muchos tipos diferentes de animales . Estos animales se convierten en una parte esencial de la supervivencia del jugador ya que algunos de ellos pueden ser explotados para obtener comida , piel u otros materiales de artesanía .
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+            <div class="container">
+                <div class="d-block d-sm-block d-md-none">
+                    
+                    <h5 class="center margin-tabla">Orden de datos:</h5>
+                    
+                    <p class="center">1er bloque = Animal<br>2do bloque = Hostilidad animal<br>3er bloque = Descripcion</p>
+                    
+                    
+                </div>
+                <div class="margin-tabla">
+                    <div class="row">
+                            <div class="d-none d-sm-none d-md-block col-sm-4 border border-secondary fondo-tabla center">
+                                <h5>Animal</h5>
+                            </div>
+                            <div class="d-none d-sm-none d-md-block col-sm-4 border border-secondary fondo-tabla center">
+                                <h5>Hostilidad animal</h5>
+                            </div>
+                            <div class="d-none d-sm-none d-md-block col-sm-4 border border-secondary fondo-tabla center">
+                                <h5>Descripcion</h5>
+                            </div>
+                        
+                    </div>
+                    <div class="letra">
+                        <div class="row">
+                            <div class="col-sm-4 border border-secondary fondo-tabla center separar-arriba">
+                                <p class="centrart">
+                                    <img src="{% static 'img/imagenes/Animales/1.png' %}" alt="Murciélago" class="imagen img-fluid">
+                                    <br>Murciélago
+                                </p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p class="center-titulo tamannioletrat">Pasivo</p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p>Realmente no se puede interactuar con ellos y solo sirven para propósitos de inmersión. Es posible matar murciélagos golpeándolos con el arma que elijas, pero no dejan caer nada.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 border border-secondary fondo-tabla center separar-arriba">
+                                <p class="centrart">
+                                    <img src="{% static 'img/imagenes/Animales/2.png' %}" alt="Aves" class="imagen img-fluid">
+                                    <br>Aves
+                                </p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p class="center-titulo tamannioletrat">Pasivo</p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p>Las aves se refieren a una variedad de animales emplumados que se encuentran en el aire y se encuentran en casi todos los lugares sobre el suelo en The Forest . Proporcionan plumas , que son cruciales para fabricar flechas , y se pueden matar para obtener carne pequeña o, en el caso de la gaviota, cabezas de animales .</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 border border-secondary fondo-tabla center separar-arriba">
+                                <p class="centrart">
+                                    <img src="{% static 'img/imagenes/Animales/3.png' %}" alt="Ciervos" class="imagen img-fluid">
+                                    <br>Ciervos
+                                </p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p class="center-titulo tamannioletrat">Pasivo</p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p>Los ciervos se pueden encontrar en las zonas boscosas, aunque también en campos abiertos, como las Tierras Fértiles . Cuando los matan, pueden ser desollados por una piel de ciervo , luego sacrificados por cuatro carnes y finalmente dejar caer una cabeza de ciervo .</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 border border-secondary fondo-tabla center separar-arriba">
+                                <p class="centrart">
+                                    <img src="{% static 'img/imagenes/Animales/4.png' %}" alt="Peces" class="imagen img-fluid">
+                                    <br>Peces
+                                </p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p class="center-titulo tamannioletrat">Pasivo</p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p>Los peces son un grupo de animales pasivos que se pueden encontrar en el océano , río , estanques o en el agua de cuevas . Cuando se matan, los peces caen como un artículo de colección, el pescado crudo , que luego se puede cocinar o colgar en una rejilla de secado .</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 border border-secondary fondo-tabla center separar-arriba">
+                                <p class="centrart">
+                                    <img src="{% static 'img/imagenes/Animales/5.png' %}" alt="Gansos" class="imagen img-fluid">
+                                    <br>Gansos
+                                </p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p class="center-titulo tamannioletrat">Pasivo</p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p>El ganso es un animal volador y emplumado que se encuentra cerca de los lagos. Es el único pájaro que se posa en el agua, y el mismo nombre del lago de los gansos , al suroeste de Sinkhole .</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 border border-secondary fondo-tabla center separar-arriba">
+                                <p class="centrart">
+                                    <img src="{% static 'img/imagenes/Animales/6.png' %}" alt="Lagarto" class="imagen img-fluid">
+                                    <br>Lagarto
+                                </p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p class="center-titulo tamannioletrat">Pasivo</p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p>Las lagartijas se pueden encontrar en casi toda la superficie de la península , excepto en las costas y las regiones nevadas profundas. Cuando muere, el jugador puede obtener una piel de lagarto y un lagarto crudo , así como una cabeza de lagarto.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 border border-secondary fondo-tabla center separar-arriba">
+                                <p class="centrart">
+                                    <img src="{% static 'img/imagenes/Animales/8.png' %}" alt="Conejo" class="imagen img-fluid">
+                                    <br>Conejo
+                                </p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p class="center-titulo tamannioletrat">Pasivo</p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p>El conejo se puede recolectar para obtener una piel de conejo , una carne de conejo cruda y una cabeza de conejo . La carne cosechada se puede cocinar al fuego o secar en una rejilla de secado y comer.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 border border-secondary fondo-tabla center separar-arriba">
+                                <p class="centrart">
+                                    <img src="{% static 'img/imagenes/Animales/9.png' %}" alt="Mapache" class="imagen img-fluid">
+                                    <br>Mapache
+                                </p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p class="center-titulo tamannioletrat">Pasivo</p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p>Los mapaches son algunos de los animales más raros del juego. Cuando los matan y los despellejan, dejan caer 2 carnes , 1 piel de mapache y 1 cabeza de mapache . A diferencia de la mayoría de los animales pequeños en The Forest , los mapaches solo se pueden matar con dos golpes de cualquier arma.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p class="centrart">
+                                    <img src="{% static 'img/imagenes/Animales/10.png' %}" alt="Gaviota" class="imagen img-fluid">
+                                    <br>Gaviota
+                                </p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p class="center-titulo tamannioletrat">Pasivo</p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p>Las aves se refieren a una variedad de animales emplumados que se encuentran en el aire y se encuentran en casi todos los lugares sobre el suelo en The Forest . Proporcionan plumas , que son cruciales para fabricar flechas , y se pueden matar para obtener carne pequeña o, en el caso de la gaviota, cabezas de animales.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p class="centrart">
+                                    <img src="{% static 'img/imagenes/Animales/11.png' %}" alt="Ardilla" class="imagen img-fluid">
+                                    <br>Ardilla
+                                </p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p class="center-titulo tamannioletrat">Pasivo</p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p>Las ardillas le dan al jugador una carne pequeña y una cabeza de ardilla . Al igual que con la mayoría de los animales pequeños, las ardillas se pueden matar con un solo golpe de cualquier arma en el juego.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p class="centrart">
+                                    <img src="{% static 'img/imagenes/Animales/12.png' %}" alt="Tortuga de tierra" class="imagen img-fluid">
+                                    <br>Tortuga de Tierra
+                                </p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p class="center-titulo tamannioletrat">Pasivo</p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p>Las tortugas son animales pasivos que desovan en áreas específicas alrededor del agua, especialmente en las tierras pantanosas. Se mueven muy lentamente y se esconderán dentro de su caparazón si intentas atacarlos. Al igual que las tortugas , la tortuga dejará caer un caparazón de tortuga y dos piezas de carne después de la muerte.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p class="centrart">
+                                    <img src="{% static 'img/imagenes/Animales/13.png' %}" alt="Tortuga de mar" class="imagen img-fluid">
+                                    <br>Tortuga de mar
+                                </p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p class="center-titulo tamannioletrat">Pasivo</p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p>Dejan caer un caparazón de tortuga , que se puede usar para fabricar el colector de agua , o como un trineo a partir de la v0.67, y dos carnes , que se pueden cocinar o secar y comer.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p class="centrart">
+                                    <img src="{% static 'img/imagenes/Animales/Boar.webp' %}" alt="Jabalí" class="imagen img-fluid">
+                                    <br>Jabalí
+                                </p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p class="center-titulo tamannioletrat">Agresivo</p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p>Similar al cocodrilo , el jabalí es un animal agresivo capaz de atacar y dañar al jugador. Si el jugador permanece cerca de un jabalí durante demasiado tiempo, emitirá un chillido y comenzará a cargar hacia el jugador. Si el jabalí golpea al jugador con su carga, inflige 15 puntos de daño al jugador sin armadura, al morir suelta 2 de carne y piel.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p class="centrart">
+                                    <img src="{% static 'img/imagenes/Animales/shark.webp' %}" alt="Tibúron" class="imagen img-fluid">
+                                    <br>Tibúron
+                                </p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p class="center-titulo tamannioletrat">Agresivo</p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p>Los tiburones son animales hostiles que se pueden encontrar nadando en áreas particulares del océano donde el agua es demasiado profunda para pararse. Si el jugador se acerca demasiado, un tiburón cargará hacia él y lo atacará mordiéndolo, al morir slo sueltan 1 de carne y la cabeza.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p class="centrart">
+                                <img src="{% static 'img/imagenes/Animales/Crocodile.webp' %}" alt="Cocodrilo" class="imagen img-fluid">
+                                <br>Cocodrilo
+                            </p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p class="center-titulo tamannioletrat">Agresivo</p>
+                            </div>
+                            <div class="col-sm-4 border border-secondary fondo-tabla center">
+                                <p>Los cocodrilos se pueden encontrar esparcidos por la parte norte del río que atraviesa la península , aunque casi nunca se encuentran en el agua . Dejan caer 4 pieles de lagarto y 4 carnes si se matan, junto con su cabeza que se puede usar como decoración.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+               
+                    
+                        <footer id="piedepag">
+                            <p>Chile, Santiago de Chile | Fono: 227369936 | Email: tfwiki@gmail.com</p>
+                            <p>Copyright 2022 Wiki <span style="color: #ffc400;">THE FOREST WIKI</span></p>
+                        </footer>
+                        
+
+                
+                   
+
+                
+
+
+
+                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

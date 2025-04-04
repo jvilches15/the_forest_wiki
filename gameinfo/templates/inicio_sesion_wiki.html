@@ -1,0 +1,76 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="imagenes/Icono/the-forest.icon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ffec4ec2ed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/csslogin/login.css' %}">
+
+    <title>Iniciar sesión - The Forest Wiki</title>
+  </head>
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="menuprincipal_wiki.html" id="fuente">The Forest Wiki</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.google.com/maps/place/R%C3%ADo+Imperial+460,+Valle+Grande,+Lampa,+Regi%C3%B3n+Metropolitana/" target="_blank">Dirección</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'registrarse' %}">Registrarse</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section>
+      <div class="row g-0">
+        <div class="col-lg-5 bg-dark d-flex flex-column align-items-end min-vh-100">
+          <div class="align-self-center w-100 px-lg-5 py-lg-4 p-4">
+            <h1 class="font-weight-bold mb-4" id="subir">Bienvenido Ingresa tu Usuario</h1>
+            <form class="mb-5">
+              <div class="mb-4">
+                <label for="exampleInputEmail1" class="form-label font-weight-bold">Email</label>
+                <input type="email" class="form-control bg-dark-x border-0" id="exampleInputEmail1" placeholder="Ingresa tu email" aria-describedby="emailHelp" style="background-color: #ffffff;">
+              </div>
+              <div class="mb-4">
+                <label for="exampleInputPassword1" class="form-label font-weight-bold">Contraseña</label>
+                <input type="password" id="myInput" class="form-control bg-dark-x border-0 mb-2" placeholder="Ingresa tu contraseña" style="background-color: #ffffff;">
+                <input type="checkbox" onclick="myFunction()"> Mostrar Contraseña
+                <div>
+                <a href="{% url 'recuperacontra' %}" id="emailHelp" class="form-text text-muted text-decoration-none">
+                  ¿Has olvidado tu contraseña?
+                </div>
+              </a>
+              </div>
+              <a href="{% url 'menu' %}" class="button">Iniciar sesión</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="piedepag">
+      <p>Chile, Santiago de Chile | Fono: 227369936 | Email: tfwiki@gmail.com</p>
+      <p>Copyright 2022 Wiki <span style="color: #ffc400;">THE FOREST WIKI</span></p>
+    </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myInput");
+        x.type = x.type === "password" ? "text" : "password";
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

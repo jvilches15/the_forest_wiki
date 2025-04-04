@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --dorado: #ffc400;
+    --gris-oscuro: #222;
+    --negro: #000;
+    --blanco: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+/* ----------- Títulos ----------- */
+h1, h2, h3 {
+    color: var(--dorado);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#titulo {
+    font-size: 2rem;
+    border: 3px solid var(--gris-oscuro);
+    border-radius: 50px;
+    background: linear-gradient(45deg, var(--negro), var(--gris-oscuro));
+    padding: 10px 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+/* ----------- Contenedor Principal ----------- */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* ----------- Tablas ----------- */
+table {
+    width: 80%;
+    background-color: var(--gris-oscuro);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    color: var(--blanco);
+}
+
+th {
+    background-color: var(--dorado);
+    color: var(--negro);
+    font-weight: bold;
+}
+
+td {
+    border-bottom: 1px solid var(--negro);
+}
+
+/* ----------- Botones ----------- */
+.boton {
+    background: var(--dorado);
+    color: var(--negro);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.boton:hover {
+    background: var(--blanco);
+    color: var(--dorado);
+    transform: scale(1.05);
+}
+
+/* ----------- Footer ----------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--gris-oscuro);
+    color: var(--blanco);
+}
