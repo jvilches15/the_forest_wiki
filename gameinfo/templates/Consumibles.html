@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,13 +6,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagenes/Icono/the-forest.icon.png" />
+    <link rel="shortcut icon" href="{% static 'img/imagenes/Icono/the-forest.icon.png' %}" />
     <title>Consumibles-The forest Wiki</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet">
-    <link rel=stylesheet href="Consumibles.css" />
+        <link rel="stylesheet" href="{% static 'css/Consumibles.css' %}">
 
 
     
@@ -28,22 +29,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="menuprincipal_wiki.html">Inicio</a>
+              <a class="nav-link" href="{% url 'menu' %}">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="forowiki.html">Foro</a>
+              <a class="nav-link" href="{% url 'forowiki' %}">Foro</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://www.google.com/maps/place/R%C3%ADo+Imperial+460,+Valle+Grande,+Lampa,+Regi%C3%B3n+Metropolitana/@-33.3295809,-70.751195,17z/data=!3m1!4b1!4m5!3m4!1s0x9662bf62531dc747:0xc0b4aee73c3b9373!8m2!3d-33.3295854!4d-70.7490063?hl=es-CL">Dirección</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="registrase_wiki.html">Registrarse</a>
+              <a class="nav-link" href="{% url 'registrarse' %}">Registrarse</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="inicio_sesion_wiki.html">Iniciar sesion</a>
+                  <a class="nav-link" href="{% url 'login' %}">Iniciar Sesión</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="micuentatf.html">Mi Cuenta</a>
+                  <a class="nav-link" href="{% url 'micuentatf' %}">Mi Cuenta</a>
               </li>
           </ul>
           <form class="d-flex" id="separar-derecha">
@@ -94,7 +95,7 @@
                           <td>Energia</td>
                         </tr>
                         <tr>
-                          <th scope="row" class="centrart"><img src="imagenes/Consumibles/Aloe.webp">Aloe</th>
+                          <th scope="row" class="centrart"><img src="{% static 'img/imagenes/Consumibles/Aloe.webp' %}">Aloe</th>
                           <td>5</td>
                           <td>0</td>
                           <td>2</td>
@@ -105,7 +106,7 @@
                           <td>2</td>
                         </tr>
                         <tr>
-                          <th scope="row" class="centrart"><img src="imagenes/Consumibles/AmanitaMushroom.webp" alt="">Amanita</th>
+                          <th scope="row" class="centrart"><img src="{% static 'img/imagenes/Consumibles/AmanitaMushroom.webp' %}">Amanita</th>
                           <td>5</td>
                           <td>0</td>
                           <td>-2</td>
@@ -116,7 +117,7 @@
                           <td>10</td>
                         </tr>
                         <tr>
-                          <th scope="row" class="centrart"><img src="imagenes/Consumibles/BlackBerries.webp" alt="">Bayas negras</th>
+                          <th scope="row" class="centrart"><img src="{% static 'img/imagenes/Consumibles/BlackBerries.webp' %}">Bayas negras</th>
                           <td>5</td>
                           <td>10</td>
                           <td>0</td>
@@ -127,7 +128,7 @@
                           <td>10</td>
                         </tr>
                         <tr>
-                          <th scope="row" class="centrart"><img src="imagenes/Consumibles/Bloodied.webp" alt="">Beber con manos</th>
+                          <th scope="row" class="centrart"><img src="{% static 'img/imagenes/Consumibles/Bloodied.webp' %}">Beber con manos</th>
                           <td>0</td>
                           <td>10</td>
                           <td>-1</td>
@@ -138,7 +139,7 @@
                           <td>0</td>
                         </tr>
                         <tr>
-                          <th scope="row" class="centrart"><img src="imagenes/Consumibles/Booze.webp" alt="">Alcohol</th>
+                          <th scope="row" class="centrart"><img src="{% static 'img/imagenes/Consumibles/Booze.webp' %}">Alcohol</th>
                           <td>2</td>
                           <td>50</td>
                           <td>15</td>
@@ -149,7 +150,7 @@
                           <td>-10</td>
                         </tr>
                         <tr>
-                          <th scope="row" class="centrart"><img src="imagenes/Consumibles/FishEdible.webp" alt="">Pescado</th>
+                          <th scope="row" class="centrart"><img src="{% static 'img/imagenes/Consumibles/FishEdible.webp' %}">Pescado</th>
                           <td>61</td>
                           <td>0</td>
                           <td>0</td>
@@ -160,7 +161,7 @@
                           <td>14</td>
                         </tr>
                         <tr>
-                          <th scope="row" class="centrart"><img src="imagenes/Consumibles/Head.webp" alt="">Cabeza</th>
+                          <th scope="row" class="centrart"><img src="{% static 'img/imagenes/Consumibles/Head.webp' %}">Cabeza</th>
                           <td>10</td>
                           <td>0</td>
                           <td>0</td>
@@ -171,7 +172,7 @@
                           <td>10</td>
                         </tr>
                         <tr>
-                          <th scope="row" class="centrart"><img src="imagenes/Consumibles/IconMeatBurnt.webp" alt="">Carne cocinada</th>
+                          <th scope="row" class="centrart"><img src="{% static 'img/imagenes/Consumibles/IconMeatBurnt.webp' %}">Carne cocinada</th>
                           <td>17</td>
                           <td>-10</td>
                           <td>0</td>
@@ -182,7 +183,7 @@
                           <td>3</td>
                         </tr>
                         <tr>
-                          <th scope="row" class="centrart"><img src="imagenes/Consumibles/Leg.webp" alt="">Piernas</th>
+                          <th scope="row" class="centrart"><img src="{% static 'img/imagenes/Consumibles/Leg.webp' %}">Piernas</th>
                           <td>98</td>
                           <td>20</td>
                           <td>0</td>
@@ -193,7 +194,7 @@
                           <td>4</td>
                         </tr>
                         <tr>
-                          <th scope="row" class="centrart"><img src="imagenes/Consumibles/Meat.webp" alt="">Carne cruda</th>
+                          <th scope="row" class="centrart"><<img src="{% static 'img/imagenes/Consumibles/Meat.webp' %}">Carne cruda</th>
                           <td>98</td>
                           <td>-5</td>
                           <td>20</td>
@@ -204,7 +205,7 @@
                           <td>28</td>
                         </tr>
                         <tr>
-                          <th scope="row" class="centrart"><img src="imagenes/Consumibles/Meds.webp" alt="">Medicina</th>
+                          <th scope="row" class="centrart"><img src="{% static 'img/imagenes/Consumibles/Meds.webp' %}">Medicina</th>
                           <td>0</td>
                           <td>0</td>
                           <td>100</td>
@@ -215,7 +216,7 @@
                           <td>0</td>
                         </tr>
                         <tr>
-                          <th scope="row" class="centrart"><img src="imagenes/Consumibles/Oyster.webp" alt="">Ostra</th>
+                          <th scope="row" class="centrart"><img src="{% static 'img/imagenes/Consumibles/Oyster.webp' %}">Ostra</th>
                           <td>15</td>
                           <td>0</td>
                           <td>3</td>
@@ -226,7 +227,7 @@
                           <td>12</td>
                         </tr>
                         <tr>
-                            <th scope="row" class="centrart"><img src="imagenes/Consumibles/RabbitMeat.webp" alt="">Carne de conejo</th>
+                            <th scope="row" class="centrart"><img src="{% static 'img/imagenes/Consumibles/RabbitMeat.webp' %}">Carne de conejo</th>
                             <td>98</td>
                             <td>-5</td>
                             <td>20</td>
@@ -237,7 +238,7 @@
                             <td>28</td>
                           </tr>
                           <tr>
-                            <th scope="row" class="centrart"><img src="imagenes/Consumibles/Snack.webp" alt="">Snack</th>
+                            <th scope="row" class="centrart"><img src="{% static 'img/imagenes/Consumibles/Snack.webp' %}">Snack</th>
                             <td>25</td>
                             <td>0</td>
                             <td>5</td>
@@ -248,7 +249,7 @@
                             <td>20</td>
                           </tr>
                           <tr>
-                            <th scope="row" class="centrart"><img src="imagenes/Consumibles/Soda.webp" alt="">Bebida</th>
+                            <th scope="row" class="centrart"><img src="{% static 'img/imagenes/Consumibles/Soda.webp' %}">Bebida</th>
                             <td>0</td>
                             <td>50</td>
                             <td>0</td>

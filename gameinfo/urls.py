@@ -17,13 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from . import views
+from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
     path('login/', views.login_view, name='login'),
     path('menu/', views.menu_view, name='menu'),
-    path('registrarse/', views.registrarse_view, name='registrarse'),
     path('animales/', views.animales_view, name='animales'),
     path('armas/', views.armas_view, name='armas'),
     path('construcciones/', views.construcciones_view, name='construcciones'),
@@ -36,5 +36,5 @@ urlpatterns = [
     path('lugarestf/', views.lugarestf_view, name='lugarestf'),
     path('micuentatf/', views.micuentatf_view, name='micuentatf'),
     path('recuperacontra/', views.recuperacontra_view, name='recuperacontra'),
-    path('registrase_wiki/', views.registrase_wiki_view, name='registrase_wiki'),     
+    path('registrarse/', views.registro_usuario, name='registrarse'),     
 ]

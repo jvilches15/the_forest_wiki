@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="imagenes/Icono/the-forest.icon.png" />
+  <link rel="shortcut icon" href="{% static 'img/imagenes/Icono/the-forest.icon.png' %}" />
   <title>Lugares-The forest Wiki</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -28,22 +28,22 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="menuprincipal_wiki.html">Inicio</a>
+          <a class="nav-link" href="{% url 'menu' %}">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="forowiki.html">Foro</a>
+          <a class="nav-link" href="{% url 'forowiki' %}">Foro</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="https://www.google.com/maps/place/R%C3%ADo+Imperial+460,+Valle+Grande,+Lampa,+Regi%C3%B3n+Metropolitana/@-33.3295809,-70.751195,17z/data=!3m1!4b1!4m5!3m4!1s0x9662bf62531dc747:0xc0b4aee73c3b9373!8m2!3d-33.3295854!4d-70.7490063?hl=es-CL">Dirección</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="registrase_wiki.html">Registrarse</a>
+          <a class="nav-link" href="{% url 'registrarse' %}">Registrarse</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="inicio_sesion_wiki.html">Iniciar sesion</a>
+              <a class="nav-link" href="{% url 'login' %}">Iniciar Sesión</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="micuentatf.html">Mi Cuenta</a>
+              <a class="nav-link" href="{% url 'micuentatf' %}">Mi Cuenta</a>
           </li>
       </ul>
       <form class="d-flex" id="separarsearch">
@@ -138,7 +138,7 @@
           </div>
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/pueblodelacascada_1.jpg" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/pueblodelacascada_1.jpg' %}" class="card-img-top" alt="Pueblo de la cascada">
               <div class="card-body">
                 <h5 class="card-title">Pueblo de la cascada</h5>
                 <p class="card-text">La aldea de la cascada es una aldea mutante que los mutantes suelen utilizar como
@@ -152,7 +152,7 @@
           </div>
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/pueblodecocodrilos_1.jpg" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/pueblodecocodrilos_1.jpg' %}" class="card-img-top" alt="Pueblo de cocodrilos">
               <div class="card-body">
                 <h5 class="card-title">Aldea de cabañas de cocdrilos</h5>
                 <p class="card-text">Este pueblo está ubicado entre el río y la zona de nieve. . Es posible que los
@@ -173,7 +173,7 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/puebloribereño_1.jpg" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/puebloribereño_1.jpg' %}" class="card-img-top" alt="Pueblo ribereño">
               <div class="card-body">
                 <h5 class="card-title">Pueblo Ribereño</h5>
                 <p class="card-text">Es pequeño y carece de ebjetos, Hay algunas tiendas de campaña de lona al otro lado
@@ -188,7 +188,7 @@
           </div>
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/pueblocostero_1.jpg" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/pueblocostero_1.jpg' %}" class="card-img-top" alt="Pueblo costero">
               <div class="card-body">
                 <h5 class="card-title">Pueblo Costero</h5>
                 <p class="card-text"> Se ubica junto al mar contiene dos cabañas y suele estar patrullada por caníbales,
@@ -207,7 +207,7 @@
           </div>
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/puebloprincipal_1.jpg" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/puebloprincipal_1.jpg' %}" class="card-img-top" alt="Pueblo principal">
               <div class="card-body">
                 <h5 class="card-title">Pueblo Principal</h5>
                 <p class="card-text">Es aldea más grande que han construido los caníbales, A menudo está patrullado por
@@ -242,7 +242,7 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/tumbadelaplaya_1.jpg" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/tumbadelaplaya_1.jpg' %}" class="card-img-top" alt="Tumba de la playa">
               <div class="card-body">
                 <h5 class="card-title">Tumba junto a la playa</h5>
                 <p class="card-text">se puede encontrar en la playa en la bahía de yates.
@@ -254,7 +254,7 @@
           </div>
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/cabina_1.png" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/cabina_1.png' %}" class="card-img-top" alt="Cabina">
               <div class="card-body">
                 <h5 class="card-title">Cabina</h5>
                 <p class="card-text">Es el frente faltante del avión estrellado en el que reapareces, Ubicado cerca de
@@ -269,7 +269,7 @@
           </div>
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/lagodelosgansos_1.png" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/lagodelosgansos_1.png' %}" class="card-img-top" alt="Lago de los gansos">
               <div class="card-body">
                 <h5 class="card-title">Lago de los Gansos</h5>
                 <p class="card-text">Es un lugar dentro del bosque donde se pueden encontrar una multitud de gansos, El
@@ -285,7 +285,7 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/helicoptero_1.png" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/helicoptero_1.png' %}" class="card-img-top" alt="Helicoptero">
               <div class="card-body">
                 <h5 class="card-title">Helicóptero</h5>
                 <p class="card-text">Se encuentra en el fondo del sumidero . Es un avión pequeño, pero parece haber
@@ -298,7 +298,7 @@
           </div>
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/contenedores de envio_1.png" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/contenedores de envio_1.png' %}" class="card-img-top" alt="Contenedores de envio">
               <div class="card-body">
                 <h5 class="card-title">Contenedores de envío</h5>
                 <p class="card-text">Solía ​​encontrarse en la playa junto con otros dos contenedores, varios paquetes y
@@ -315,7 +315,7 @@
           </div>
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/cuartodealijo_1.jpg" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/cuartodealijo_1.jpg' %}" class="card-img-top" alt="Cuarto de alijo">
               <div class="card-body">
                 <h5 class="card-title">Cuarto de alijo oculto</h5>
                 <p class="card-text">Es una sala secreta que contiene montones de elementos y algunos elementos de la
@@ -341,7 +341,7 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/labsahara_1.png" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/labsahara_1.png' %}" class="card-img-top" alt="Lab Sahara">
               <div class="card-body">
                 <h5 class="card-title">Laboratorio Sahára</h5>
                 <p class="card-text">Propiedad de Sahara Therapeutics es un área subterránea profunda en la península .
@@ -355,7 +355,7 @@
           </div>
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/obelisco_1.png" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/obelisco_1.png' %}" class="card-img-top" alt="Obelisco">
               <div class="card-body">
                 <h5 class="card-title">Obelisco</h5>
                 <p class="card-text">Se dividen en 3 obeliscos Obelisco de Res, es una parte principal de la historia .
@@ -374,7 +374,7 @@
           </div>
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/puertadeboveda_1.jpg" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/puertadeboveda_1.jpg' %}" class="card-img-top" alt="Puerta de Boveda">
               <div class="card-body">
                 <h5 class="card-title">Puerta de la Bóveda</h5>
                 <p class="card-text">Al abrir la puerta de la bóveda , la historia avanza y proporciona acceso al
@@ -393,7 +393,7 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/sumidero_1.png" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/sumidero_1.png' %}" class="card-img-top" alt="Sumidero">
               <div class="card-body">
                 <h5 class="card-title">Sumidero</h5>
                 <p class="card-text">Hay varias formas de llegar al fondo del sumidero . Para llegar al fondo puedes:
@@ -411,7 +411,7 @@
           </div>
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/lagodenieve_1.jpg" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/lagodenieve_1.jpg' %}" class="card-img-top" alt="Lago de nieve">
               <div class="card-body">
                 <h5 class="card-title">Lago de nieve</h5>
                 <p class="card-text"> Es un lago grande y es un lugar popular para que los jugadores construyan una vez
@@ -430,7 +430,7 @@
 
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/elavion_1.png" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/elavion_1.png' %}" class="card-img-top" alt="El avion">
               <div class="card-body">
                 <h5 class="card-title">El Avión</h5>
                 <p class="card-text">Juega un papel importante en la historia , ya que es la razón por la que el jugador
@@ -448,7 +448,7 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/campamentoestanque_1.jpg" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/campamentoestanque_1.jpg' %}" class="card-img-top" alt="Campamento estanque">
               <div class="card-body">
                 <h5 class="card-title">Campamento estanque</h5>
                 <p class="card-text">Es un pequeño lugar para acampar que consta de 2 tiendas azules que se pueden usar
@@ -467,7 +467,7 @@
           </div>
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/campamentodefilmacion_1.png" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/campamentodefilmacion_1.png' %}" class="card-img-top" alt="Campamento de filmacion">
               <div class="card-body">
                 <h5 class="card-title">Campamento del equipo de filmación</h5>
                 <p class="card-text">Es un lugar saturado de carpas. Tiene enlaces a la historia . Hay cadáveres,
@@ -494,7 +494,7 @@
           </div>
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/tripulacioncongelada_1.jpg" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/tripulacioncongelada_1.jpg' %}" class="card-img-top" alt="Tripulacion congelada">
               <div class="card-body">
                 <h5 class="card-title">Campamento de tripulación congelado</h5>
                 <p class="card-text">Es un lugar para acampar con 3 cuerpos congelados ubicados en el extremo norte de
@@ -511,7 +511,7 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/puentetierra_1.png" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/puentetierra_1.png' %}" class="card-img-top" alt="Puente tierra">
               <div class="card-body">
                 <h5 class="card-title">Puente de tierra</h5>
                 <p class="card-text">Es un trozo de tierra que separa el río del mar . Es bastante grueso y tiene una
@@ -526,7 +526,7 @@
           </div>
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/campamentodeplaya_1.png" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/campamentodeplaya_1.png' %}" class="card-img-top" alt="Campamento de playa">
               <div class="card-body">
                 <h5 class="card-title">Campamento de playa </h5>
                 <p class="card-text">Es una tienda de campaña en la playa, es un lugar común para guardar y un lugar
@@ -553,7 +553,7 @@
           </div>
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/Tierrasfertiles_1.png" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/Tierrasfesrtiles_1.png' %}" class="card-img-top" alt="Tierras fertiles">
               <div class="card-body">
                 <h5 class="card-title">Tierras fértiles</h5>
                 <p class="card-text">Son una extensión de tierra relativamente plana y abierta con una alta densidad de
@@ -579,7 +579,7 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/lugarparaacampar_1.jpg" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/lugarparaacampar_1.jpg' %}" class="card-img-top" alt="Lugar para acampar">
               <div class="card-body">
                 <h5 class="card-title">Lugar para acampar</h5>
                 <p class="card-text">Está discretamente ubicado en la parte sur del bosque, fácil de pasar por alto
@@ -600,7 +600,7 @@
           </div>
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/yate_1.jpg" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/yate_1.jpg' %}" class="card-img-top" alt="Yate">
               <div class="card-body">
                 <h5 class="card-title">Yate</h5>
                 <p class="card-text">Es una embarcación abandonada que se encuentra en una bahía de la costa suroeste de
@@ -637,7 +637,7 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/islastf.jpg" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/islastf.jpg' %}" class="card-img-top" alt="Islas">
               <div class="card-body">
                 <h5 class="card-title">Islas</h5>
                 <p class="card-text">Estas áreas del juego que están en el mar y no están conectadas por ningún tipo de
@@ -650,7 +650,7 @@
           </div>
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/riotf.png" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/riotf.png' %}" class="card-img-top" alt="Rio">
               <div class="card-body">
                 <h5 class="card-title">río</h5>
                 <p class="card-text">Es el principal cuerpo de agua que discurre por el centro de la península Los peces
@@ -664,7 +664,7 @@
           </div>
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/areademontaña_1.jpg" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/areademontaña_1.jpg' %}" class="card-img-top" alt="Area de montaña">
               <div class="card-body">
                 <h5 class="card-title">Area de montaña</h5>
                 <p class="card-text">Es la parte norte de la península que está cubierta de nieven no son escalables
@@ -688,7 +688,7 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/puestodevigilancia_1.png" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/puestodevigilancia_1.png' %}" class="card-img-top" alt="Puesto de vigilancia">
               <div class="card-body">
                 <h5 class="card-title">Puesto de vigilancia</h5>
                 <p class="card-text">son estructuras que parecen haber sido creadas por los caníbales , aunque nunca se
@@ -703,7 +703,7 @@
           </div>
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/arbolessagrados_1.jpg" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/arbolessagrados_1.jpg' %}" class="card-img-top" alt="Arboles sagrados">
               <div class="card-body">
                 <h5 class="card-title">Árboles sagrados</h5>
                 <p class="card-text">Son árboles caducifolios gigantes, pálidos, parecidos a los robles, esparcidos por
@@ -716,7 +716,7 @@
           </div>
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/campamentoabandonado_1.png" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/campamentoabandonado_1.png' %}" class="card-img-top" alt="Campamento abandonado">
               <div class="card-body">
                 <h5 class="card-title">Campamento abandonado</h5>
                 <p class="card-text">Hay varios campings abandonados repartidos por la península y en las cuevas, En los
@@ -736,7 +736,7 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/playastf.png" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/playastf.png' %}" class="card-img-top" alt="Playas">
               <div class="card-body">
                 <h5 class="card-title">Playas</h5>
                 <p class="card-text">Son lugares de arena en la mayoría de los bordes de la península . Las tortugas y
@@ -751,7 +751,7 @@
           </div>
           <div class="col">
             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.541);">
-              <img src="img_lugares_wiki/estanquedepesca_1.jpg" class="card-img-top" alt="...">
+              <img src="{% static 'img/img_lugares_wiki/estanquedepesca_1.jpg' %}" class="card-img-top" alt="Estanque de pesca">
               <div class="card-body">
                 <h5 class="card-title">Estanque de pesca</h5>
                 <p class="card-text">son lugares de agua repartidos por toda la península . A veces se encuentran junto

@@ -4,7 +4,7 @@
 
 #fondo1{
    background-color: black;  
-   background-image: url(imagenes/Fondos/Fondo3.jpg); 
+   background-image: url("{% static 'img/imagenes/Fondos/Fondo3.jpg' %}"); 
    background-position: top;
    background-attachment: fixed;
    background-repeat: no-repeat;

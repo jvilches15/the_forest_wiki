@@ -2,6 +2,12 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <style>
+      .login-bg {
+        background: url("{% static 'img/imagenes/Fondos/Fondo5.jpg' %}") no-repeat center center fixed;
+        background-size: cover;
+      }
+    </style>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +23,7 @@
 
     <title>Registrarse-The forest Wiki</title>
   </head>
-  <body class="bg-dark">
+  <body class="bg-dark login-bg">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         
       <a class="navbar-brand" href="menuprincipal_wiki.html" id="fuente">The Forest Wiki</a>
@@ -26,24 +32,15 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="menuprincipal_wiki.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="forowiki.html">Foro</a>
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link" href="https://www.google.com/maps/place/R%C3%ADo+Imperial+460,+Valle+Grande,+Lampa,+Regi%C3%B3n+Metropolitana/@-33.3295809,-70.751195,17z/data=!3m1!4b1!4m5!3m4!1s0x9662bf62531dc747:0xc0b4aee73c3b9373!8m2!3d-33.3295854!4d-70.7490063?hl=es-CL">Dirección</a>
           </li>
-          <li class="nav-item">
-              <a class="nav-link" href="registrase_wiki.html">Registrarse</a>
-            </li>
+          
             <li class="nav-item">
-              <a class="nav-link" href="inicio_sesion_wiki.html">Iniciar sesion</a>
+                <a class="nav-link" href="{% url 'login' %}">Iniciar Sesión</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="micuentatf.html">Mi Cuenta</a>
-            </li>
+            
         </ul>
         <form class="d-flex" id="separarsearch">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="background: #ffffff;">
@@ -83,27 +80,26 @@
                 </div>
                 <div class="align-self-center w-100 px-lg-5 py-lg-4 p-4">
                 <h1 class="font-weight-bold mb-4" id="subir">Ingrese sus Datos</h1>
-                <form class="mb-5">
-                    <div class="mb-4">
-                      <label for="exampleInputEmail1" class="form-label font-weight-bold">Email</label>
-                      <input type="email" class="form-control bg-dark-x border-0" id="exampleInputEmail1" placeholder="nombre@ejemplo.com" aria-describedby="emailHelp" style="background-color: #ffffff;">
-                    </div>
-                    <div class="mb-4">
-                      <label for="exampleInputEmail1" class="form-label font-weight-bold">Contraseña</label>
-                      <input type="email" class="form-control bg-dark-x border-0" id="exampleInputEmail1" placeholder="Ingrese su contraseña" aria-describedby="emailHelp" style="background-color: #ffffff;">
-
-                    </div>
-                    <div class="mb-4">
-                      <label for="exampleInputEmail1" class="form-label font-weight-bold">Confirme su contraseña</label>
-                      <input type="email" class="form-control bg-dark-x border-0" id="exampleInputEmail1" placeholder="Vuelva a ingresar su contraseña" aria-describedby="emailHelp" style="background-color: #ffffff;">
-
-                    </div>
-                      <a href="menuprincipal_wiki.html" class="button">Crear cuenta</a>
-                   
-                    
-                    
-                  </form>
-
+                <form method="post" class="mb-5">
+                  {% csrf_token %}
+                  
+                  <div class="mb-4">
+                    <label for="{{ form.username.id_for_label }}" class="form-label font-weight-bold">Nombre de Usuario</label>
+                    {{ form.username }} 
+                  </div>
+                
+                  <div class="mb-4">
+                    <label for="{{ form.password1.id_for_label }}" class="form-label font-weight-bold">Contraseña</label>
+                    {{ form.password1 }}
+                  </div>
+                
+                  <div class="mb-4">
+                    <label for="{{ form.password2.id_for_label }}" class="form-label font-weight-bold">Confirmar Contraseña</label>
+                    {{ form.password2 }} 
+                  </div>
+                
+                  <button type="submit" class="btn btn-success">Crear cuenta</button>
+                </form>
 
                 </div>
                 <div class="text-center px-lg-5 pt-lg-3 pb-lg-4 p-4 mt-auto w-100">
